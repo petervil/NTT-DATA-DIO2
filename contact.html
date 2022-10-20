@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Doutor Pessoa</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <img src="https://imgs.jusbr.com/publications/images/ebc279e0f07aea64950cb9967525081c" alt="Logo" width="220px">
+            <ul>
+                <li><a href="/index.html">Página Principal</a></li>
+                <li><a href="/about.html">Sobre a Clínica</a></li>
+                <li><a href="/hour.html">Horário de Atendimento</a></li>
+                <li><a href="/contact.html">Contato</a></li>
+            </ul>            
+        </div>
+
+        <div class="main">
+            <div class="header">                      
+                <h1><font color="#fffff" face="Trebuchet MS">Entre em Contato Conosco</font></h1>
+            </div>    
+            <div class="content">
+                <font face="trebuchet ms"> 
+                    <form name="contact" onsubmit="alert('Contato enviado com sucesso!');" method="post" action="">
+                        <fieldset>
+                            <legend>Digite seus Dados</legend>
+                        <div id="row">
+                            <label>Primeiro Nome:</label><input type="text" name="name"> 
+                            <label>Idade:</label><input type="number" name="age">               
+                        </div>
+                        <div id="row">
+                            <label>Ultimo Nome:</label><input type="text" name="last_name">
+                            <label>E-mail</label><input type="email" name="mail">                            
+                        </div>                        
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        <div id="row">
+                            <label>Rua:</label><input type="text" name="street">
+                            <label>Número:</label><input type="number" name="number">
+                        </div>
+                        <div id="row">
+                            <label>Bairro:</label><input type="text" name="district">
+                            <label>Cidade:</label><input type="text" name="city">
+                            <label>Estado:</label><input type="text" name="state">
+                        </div>
+                    </fieldset>
+                        <div id="row">
+                            <label>Assunto:</label>
+                        <select name="role" id="">
+                            <option value="">Escolha um assunto</option>
+                            <option value="">Elogio</option>
+                            <option value="">Dúvida</option>
+                            <option value="">Reclamação</option>
+                        </select>                                                        
+                        </div>
+                        <div id="row">
+                            <label>Insira seu texto:</label><br><textarea name="texto" id="" cols="206" rows="10"></textarea><br><br>                                                                        
+                        </div>                                                                   
+                        <button id="row" type="submit">Enviar</button>
+                        <button id="row" type="reset">Limpar</button>
+                    </form>            
+                </font>                           
+            </div>            
+            <div class="footer">
+                Rua Vista Alegre, 123, Jaboatão dos Guararapes - PE <br>
+               <font size="1">© 2022 GitHub, Inc. Footer navigation Terms Privacy</font>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
